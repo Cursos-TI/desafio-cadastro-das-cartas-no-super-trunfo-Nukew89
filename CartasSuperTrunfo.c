@@ -53,4 +53,13 @@ int main()
     printf("Pontos turisticos: ");
     scanf("%d", &pontosTuristicos2);
     
-    printf("\n\n");
+    printf("\n\n"); //linhas
+
+
+     // calculando primeira carta --
+
+     densidadePop1 = (float) populacao1 / area1;
+     pibPerCapita1 = (pib1 * 1e9) / (float) populacao1; // 1e9 multiplicado para conversap de BI para $
+     superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + ( 1.0f / densidadePop1 ); // o super poder é a soma de todos atributos mais o inverso da densidade
+ 
+    
