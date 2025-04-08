@@ -60,6 +60,26 @@ int main()
 
      densidadePop1 = (float) populacao1 / area1;
      pibPerCapita1 = (pib1 * 1e9) / (float) populacao1; // 1e9 multiplicado para conversap de BI para $
-     superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + ( 1.0f / densidadePop1 ); // o super poder é a soma de todos atributos mais o inverso da densidade
+     superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + ( 1.0f / densidadePop1 ); // o super poder é a soma de todos atributos 
  
+    // calculando carta2 --
     
+    densidadePop2 = (float) populacao2 / area2;
+    pibPerCapita2 = (pib2 * 1e9) / (float) populacao2; 
+    superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 + ( 1.0f / densidadePop2 ); 
+    
+    // mostrando carta1 --
+
+    printf("Carta 1: \n");
+    printf("Estado: %c\n", estado1);
+    printf("Codigo: %s\n", codigoCarta1);
+    printf("Nome da cidade: %s\n", nomeCidade1);
+    printf("Populacao: %ld\n", populacao1);
+    printf("Area: %.2fKm2\n", area1);
+    printf("PIB: R$ %.2f bilhoes de reais\n", pib1);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/Km2\n", densidadePop1);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita1);
+    printf("Super Poder: %.2f\n", superPoder1);
+
+    printf("\n\n");
