@@ -55,6 +55,8 @@ int main()
     
     printf("\n\n"); //linhas
 
+    // Final Primeira Parte para declaracao de valores das cartas
+
 
      // calculando primeira carta --
 
