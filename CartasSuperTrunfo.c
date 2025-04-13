@@ -83,3 +83,61 @@ int main()
     printf("Super Poder: %.2f\n", superPoder1);
 
     printf("\n\n");
+
+    // mostrando os dados carta 2 --
+
+    printf("Carta 2: \n");
+    printf("Estado: %c\n", estado2);
+    printf("Codigo: %s\n", codigoCarta2);
+    printf("Nome da cidade: %s\n", nomeCidade2);
+    printf("Populacao: %ld\n", populacao2);
+    printf("Area: %.2fKm2\n", area2);
+    printf("PIB: R$ %.2f bilhoes de reais\n", pib2);
+    printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/Km2\n", densidadePop2);
+    printf("PIB per capita: R$ %.2f\n", pibPerCapita2);
+    printf("Super Poder: %.2f\n", superPoder2);
+
+    // selecionando atributos da carta --
+
+    int atributo; // variavel para guardar a opção escolhida --
+
+    printf("Escolha o atributo para comparar as cartas:\n");
+    printf("1 - Populacao\n");
+    printf("2 - Area\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos Turisticos\n");
+    printf("5 - Densidade Populacional\n");
+    printf("Digite o numero do atributo: ");
+    scanf("%d", &atributo);
+
+    printf("\n\n");
+
+    switch (atributo) // comparando com switch / case
+    {
+    case 1:
+        // COMP ppopulacao
+        printf("Comparacao de Cartas (Atributo: Populacao)\n\n");
+
+        // atr carta 1 **
+        printf("Carta 1 - %s:(%c) %ld\n", nomeCidade1, estado1, populacao1);
+
+        // atr carta 2 **
+        printf("Carta 2 - %s:(%c) %ld\n", nomeCidade2, estado2, populacao2);
+
+        if (populacao1 > populacao2)
+        {
+            // Caso a populacao da carta 1 for maior, aparece msg vencedora
+            printf("Resultado: Carta 1 (%s) venceu!\n", nomeCidade1);
+        }
+        else if (populacao1 < populacao2)
+        {
+            // ou se a pop carta 2 for maior *
+            printf("Resultado: Carta 2 (%s) venceu!\n", nomeCidade2);
+        }
+        else
+        {
+            // Caso seja igual, ira mostrar msg de empate
+            printf("Empate!\n");
+        }
+        break;
